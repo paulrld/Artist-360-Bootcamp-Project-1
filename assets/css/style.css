@@ -21,7 +21,7 @@ body {
 	padding-bottom: 400px;
 }
 
-#fixed-buttons {
+button {
 	display: inline-block;
 	padding: 13px !important;
 
