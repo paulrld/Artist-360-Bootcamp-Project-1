@@ -20,20 +20,33 @@
 	
   <div class="container">
     <br>
-    <!-- Jumbotron -->
+    <!-- Header -->
     <div id="jumbotron-header" class="jumbotron">
       <h1 class="text-center">Artist 360</h1>
+      <!-- Search -->
+      <input class="search-input" type="text" name="search" placeholder="Search..">
     </div>
+    <!-- Main Content -->
     <div class="row">
+      <div class="col-lg-9 col-md-9">
+        <div class="jumbotron" style="background-color: lightblue; padding: 190px;">
+          
+        <div id="content">
+        <!-- Placeholder -->
+        <h1 class="text-center">Body Placeholder</h1>
+        </div>
+      
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3">
       <!-- Artist Search-->
-      <div class="col-lg-6">
-        <div class="panel panel-default">
+        <!-- <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Artist Search</h3>
           </div>
-          <div class="panel-body">
+          <div class="panel-body"> -->
             <!-- Artist Search Form (note the various input "types")-->
-            <form role="form">
+            <!-- <form role="form">
               <div class="form-group">
                 <label for="artist-name-input">Artist/Band</label>
                 <input class="form-control" id="artist-name-input" type="text">
@@ -45,18 +58,34 @@
               <div class="form-group">
                 <label for="album-input">Album</label>
                 <input class="form-control" id="album-input" type="text">
-              </div>
+              </div> 
               <div class="form-group">
                 <label for="release-year-input">Year Released</label>
                 <input class="form-control" id="release-year-input" type="number">
               </div>
-              <button class="btn btn-default" id="artist-search-btn" type="submit">Submit</button>
+               <button class="btn btn-default" id="artist-search-btn" type="submit">Submit</button>
             </form>
           </div>
+        </div> -->
+        
+        <!-- Spotify Tracks -->
+        <div class="jumbotron" style="background-color: lightgreen; padding: 60px;">
+
+          <div id="spotify-tracks">
+            <!-- Placeholder -->
+            <h2 class="text-center">Spotify</h2>
+          </div>
+          
         </div>
-      </div>
-      <!-- Search History -->
-      <div class="col-lg-6">
+        <div class="jumbotron" style="background-color: peachpuff; padding: 60px;">
+
+          <div id="spotify-tracks">
+            <!-- Placeholder -->
+            <h2 class="text-center">Twitter</h2>
+          </div>
+          
+        </div>
+        <!-- Search History -->
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">Search History</h3>
@@ -66,10 +95,10 @@
               <thead>
                 <tr>
                   <th>Artist/Band</th>
-                  <th>Song</th>
-                  <th>Album</th>
+                  <th>Song</th> 
+                  <!-- <th>Album</th>
                   <th>Year Released</th>
-                  <th>Label</th>
+                  <th>Label</th> -->
                 </tr>
               </thead>
               <tbody>
@@ -78,8 +107,31 @@
           </div>
         </div>
       </div>
-    </div> 
+    </div>
   </div>
+  <!-- Sticky Footer -->
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+          <button id="fixed-buttons" type="button" class="btn btn-default">Youtube</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button id="fixed-buttons" type="button" class="btn btn-default">Bio</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button id="fixed-buttons" type="button" class="btn btn-default">Tickets</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button id="fixed-buttons" type="button" class="btn btn-default">Karaoke</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button id="fixed-buttons" type="button" class="btn btn-default">Random</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div id="footer-spacing" class="jumbotron"></div>
 <!-- All Javascript Links -->
   <!-- jQuery first -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -93,3 +145,5 @@
   <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>   
 </html>
+                         
+          
