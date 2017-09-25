@@ -36,7 +36,21 @@ i got the api key from: i inserted the api key and client id in the respective l
 https://console.developers.google.com/apis/credentials?project=artist-360-app
 
 //============================================================================================================
-This one is what we need!
+
+This one is what we need! similar to above examples a webserver is needed
+
+taken from: https://developers.google.com/youtube/v3/quickstart/js
+
+Step 3: Run the sample
+
+Start the web server using the following command from your working directory:
+
+PYTHON 2.XPYTHON 3.X
+
+python -m SimpleHTTPServer 8000
+
+Load the URL http://localhost:8000/youtubeSearch.html into your browser.
+
 found an example of youtubeSearch.html on github:
 
 https://github.com/FriesFlorian/ViralVideos
