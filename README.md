@@ -14,7 +14,8 @@ https://www.quora.com/Why-do-I-need-a-webserver
 
 i also had to install python i ran into an error and wasnt able to run pythong in my git bash terminal found this article to fix it
 https://stackoverflow.com/questions/22869192/git-bash-wont-run-my-python-files
-//===========================
+
+//============================================================================================================
 
 added an authSample.html which uses both an api key and client id
 i think i understand a bit whats the difference between client id and api
@@ -33,3 +34,20 @@ https://github.com/google/google-api-javascript-client/edit/master/samples/authS
 
 i got the api key from: i inserted the api key and client id in the respective locations in the authSample.html
 https://console.developers.google.com/apis/credentials?project=artist-360-app
+
+//============================================================================================================
+This one is what we need!
+found an example of youtubeSearch.html on github:
+
+https://github.com/FriesFlorian/ViralVideos
+
+i took the files needed to replicate the example
+
+added comments in app.js and console.log a bunch of stuff to see how it worked
+
+added two files youtubeSearch.html, item.html
+
+youtubeSearch uses app.js
+
+app.js uses item.html
+
