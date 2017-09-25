@@ -24,7 +24,43 @@
     <div id="jumbotron-header" class="jumbotron">
       <h1 class="text-center">Artist 360</h1>
       <!-- Search -->
-      <input class="search-input" type="text" name="search" placeholder="Search..">
+      <!-- <input class="search-input" type="text" name="search" placeholder="Search..">
+    </div> -->
+    <!-- Search Button Modal -->
+      <button id="search-button" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search..</button>
+      <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Artist Search</h3>
+              </div>
+            </div>
+            <div class="panel-body">
+              <!-- Artist Search Form (note the various input "types")-->
+              <form role="form">
+                <div class="form-group">
+                  <label for="artist-name-input">Artist/Band</label>
+                  <input class="form-control" id="artist-name-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="song-input">Song</label>
+                  <input class="form-control" id="song-input" type="text">
+                </div>
+                <div class="form-group">
+                  <label for="album-input">Album</label>
+                  <input class="form-control" id="album-input" type="text">
+                </div> 
+                <div class="form-group">
+                  <label for="release-year-input">Year Released</label>
+                  <input class="form-control" id="release-year-input" type="number">
+                </div>
+                 <button class="btn btn-primary" id="artist-search-btn" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Main Content -->
     <div class="row">
@@ -40,33 +76,6 @@
       </div>
       <div class="col-lg-3 col-md-3">
       <!-- Artist Search-->
-        <!-- <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Artist Search</h3>
-          </div>
-          <div class="panel-body"> -->
-            <!-- Artist Search Form (note the various input "types")-->
-            <!-- <form role="form">
-              <div class="form-group">
-                <label for="artist-name-input">Artist/Band</label>
-                <input class="form-control" id="artist-name-input" type="text">
-              </div>
-              <div class="form-group">
-                <label for="song-input">Song</label>
-                <input class="form-control" id="song-input" type="text">
-              </div>
-              <div class="form-group">
-                <label for="album-input">Album</label>
-                <input class="form-control" id="album-input" type="text">
-              </div> 
-              <div class="form-group">
-                <label for="release-year-input">Year Released</label>
-                <input class="form-control" id="release-year-input" type="number">
-              </div>
-               <button class="btn btn-default" id="artist-search-btn" type="submit">Submit</button>
-            </form>
-          </div>
-        </div> -->
         
         <!-- Spotify Tracks -->
         <div class="jumbotron" style="background-color: lightgreen; padding: 60px;">
@@ -111,7 +120,7 @@
     </div>
   </div>
   <!-- Sticky Footer -->
-  <nav class="navbar navbar-default navbar-fixed-bottom">
+  <nav id="footer" class="navbar navbar-default navbar-fixed-bottom">
     <div class="container">
       <div class="btn-group btn-group-justified" role="group" aria-label="...">
         <div class="btn-group" role="group">
@@ -147,3 +156,4 @@
 </body>   
 </html>
                                   
+            
