@@ -1,0 +1,55 @@
+body { 
+	padding-top: 70px; 
+
+}
+
+#jumbotron-header {
+	margin-top: -70px;
+	margin-bottom: 30px;
+	overflow: auto;
+}
+
+
+/*#search {
+	
+	float: right;
+	overflow: auto;
+}*/
+
+#recent-search-table {
+	padding-bottom: 400px;
+}
+
+button {
+	/*display: inline-block;
+	padding: 13px !important;*/
+
+}
+
+#search-button {
+	float: right;
+
+	/*color: black;*/
+	/*background-color: transparent;
+	border: transparent;*/
+	
+}
+
+#footer-spacing {
+	padding: 12px;
+	background-color: transparent;
+}
+
+
+
+/*.search-input[type=text] {
+    width: 15%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    float: right;
+}
+
+ When the input field gets focus, change its width to 30% 
+.search-input[type=text]:focus {
+    width: 30%;
+}*/
