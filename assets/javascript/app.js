@@ -35,6 +35,7 @@ function tplawesome(e,t){//e=data of item.html,
 
 
     $("body").on("click","#youtube-button", function(e) {
+      console.log("testing123")
         //var test = encodeURIComponent($("#search").val()).replace(/%20/g, "+");
         console.log("loginggggggg test")
         //console.log(test)
