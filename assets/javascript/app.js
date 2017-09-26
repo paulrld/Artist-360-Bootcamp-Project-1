@@ -35,8 +35,11 @@ function tplawesome(e,t){//e=data of item.html,
 
 
     $("body").on("click","#artist-search-btn", function() {
-      event.preventDefault() 
+      event.preventDefault()
+      $(".bs-example-modal-lg").modal("hide")
+
     });
+    
     $("nav").on("click","#youtube-button", function(e) {
       console.log("testing123")
         //var test = encodeURIComponent($("#search").val()).replace(/%20/g, "+");
