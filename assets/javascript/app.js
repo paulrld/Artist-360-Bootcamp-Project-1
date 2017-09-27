@@ -100,44 +100,48 @@ function init() {
     });
 }
 
-// wikipedia
+// WIKIPEDIA!!!!!
+
 $("nav").on("click","#bio-button", function() {
   event.preventDefault()
+  
+  // WHY IS THIS CONSOLE LOGGING TWICE???
   console.log("wiki test")
+  
   $("#content").empty()
   
   var articles = $("#content");
-    var input = $("#artist-name-input");
-    var button = $("#bio-button");
-    var toSearch = '';
-    var searchUrl = 'https://en.wikipedia.org/w/api.php';
+  var input = $("#artist-name-input");
+  // var button = $("#bio-button");
+  var toSearch = '';
+  var searchUrl = 'https://en.wikipedia.org/w/api.php';
 
-    var ajaxArticleData = function () {
-        $.ajax({
-            url: searchUrl,
-            dataType: 'jsonp',
-            data: {
-                //main parameters
-                action: 'query',
-                format: 'json',
+  var ajaxArticleData = function () {
+    $.ajax({
+        url: searchUrl,
+        dataType: 'jsonp',
+        data: {
+            //main parameters
+            action: 'query',
+            format: 'json',
 
-                generator: 'search',
-                    //parameters for generator
-                    gsrsearch: toSearch,
-                    gsrnamespace: 0,
-                    gsrlimit: 1,
+            generator: 'search',
+                //parameters for generator
+                gsrsearch: toSearch,
+                gsrnamespace: 0,
+                gsrlimit: 1,
 
-                prop: 'extracts|pageimages',
-                    //parameters for extracts
-                    exchars: 200,
-                    exlimit: 'max',
-                    explaintext: true,
-                    exintro: true,
+            prop: 'extracts|pageimages',
+                //parameters for extracts
+                exchars: 200,
+                exlimit: 'max',
+                explaintext: true,
+                exintro: true,
 
-                    //parameters for pageimages
-                    piprop: 'thumbnail',
-                    pilimit: 'max',
-                    pithumbsize: 200
+                //parameters for pageimages
+                piprop: 'thumbnail',
+                pilimit: 'max',
+                pithumbsize: 200
             },
             success: function (json) {
                 var pages = json.query.pages;
