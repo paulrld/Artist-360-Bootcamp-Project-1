@@ -7,8 +7,25 @@ body {
 	margin-top: -70px;
 	margin-bottom: 30px;
 	overflow: auto;
+	background-image: url("../images/Blue Audience.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
+#jumbotron-twitter {
+	background-image: url("../images/TwitterLogoSmall.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#jumbotron-spotify {
+	background-image: url("../images/SpodifyLogo.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
 
 /*#search {
 	
