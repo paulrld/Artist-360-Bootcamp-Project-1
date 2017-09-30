@@ -1,5 +1,8 @@
 body { 
-	padding-top: 70px; 
+	padding-top: 70px;
+	background-image: url("../images/Blue Audience.jpg");
+	background-size: cover;
+	background-attachment: fixed;
 
 }
 
@@ -7,10 +10,13 @@ body {
 	margin-top: -70px;
 	margin-bottom: 30px;
 	overflow: auto;
-	background-image: url("../images/Blue Audience.jpg");
+	background-image: url("../images/Orange Audience.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-attachment: fixed;
+	color: steelblue;
+	text-shadow: 0 1px 0 white;
 }
 
 #jumbotron-twitter {
