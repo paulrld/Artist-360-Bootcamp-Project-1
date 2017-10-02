@@ -63,7 +63,10 @@ button {
 	background-color: transparent;
 }
 
-
+.artist-image {
+	width: 300px;
+	height: auto;
+}
 
 /*.search-input[type=text] {
     width: 15%;

@@ -105,7 +105,7 @@ function init() {
 $("nav").on("click","#bio-button", function() {
   event.preventDefault()
   
-  // WHY IS THIS CONSOLE LOGGING TWICE???
+  
   console.log("wiki test")
   
   $("#content").empty()
@@ -188,3 +188,7 @@ $("nav").on("click","#bio-button", function() {
         ajaxArticleData();
     // });
 })
+
+
+
+
