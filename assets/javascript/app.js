@@ -76,6 +76,7 @@ function tplawesome(e,t){//e=data of item.html,
             $.get("assets/html/item.html", function(data) {//data is the contents of item.html
               console.log(data)
                 $("#content").append(tplawesome(data, [{"title":item.snippet.title, "videoid":item.id.videoId}]));
+                console.log(item)
             });
           }
           resetVideoHeight();
