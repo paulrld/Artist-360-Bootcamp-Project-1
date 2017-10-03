@@ -102,8 +102,9 @@ function init() {
 }
 
 // WIKIPEDIA!!!!!
+$("body").on("click","#artist-search-btn", function() {
 
-$("nav").on("click","#bio-button", function() {
+// $("nav").on("click","#bio-button", function() {
   event.preventDefault()
   
   
@@ -134,7 +135,7 @@ $("nav").on("click","#bio-button", function() {
 
             prop: 'extracts|pageimages',
                 //parameters for extracts
-                exchars: 200,
+                exchars: 3000,
                 exlimit: 'max',
                 explaintext: true,
                 exintro: true,
@@ -153,7 +154,7 @@ $("nav").on("click","#bio-button", function() {
                     pageElement.append($('<h2>').append($('<a>').attr('href', 'http://en.wikipedia.org/wiki/' + page.title).text(page.title)));
 
                     //get the article image (if exists)
-                    if (page.thumbnail) pageElement.append($('<img>').attr('width', 150).attr('src', page.thumbnail.source));
+                    if (page.thumbnail) pageElement.append($('<img>').attr('width', 300).attr('src', page.thumbnail.source));
 
                     //get the article text
                     pageElement.append($('<p>').text(page.extract));
@@ -188,6 +189,7 @@ $("nav").on("click","#bio-button", function() {
         toSearch = input.val();
         ajaxArticleData();
     // });
+// })
 })
 
 
