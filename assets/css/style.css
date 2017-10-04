@@ -68,6 +68,34 @@ button {
 	height: auto;
 }
 
+#content {
+	overflow: auto;
+}
+
+h2 {
+	text-align: center;
+}
+
+p {
+	float: auto;
+	width: 90%;
+	padding: 20px;
+	font-size: 20px;
+	color: #777777;
+	margin-top: 10px;
+	line-height: 30px;
+
+}
+
+img {
+	width: 50%;
+	height: auto;
+	float: left;
+	padding: 20px;
+	position: relative;
+	top: 10px;
+}
+
 /*.search-input[type=text] {
     width: 15%;
     -webkit-transition: width 0.4s ease-in-out;
