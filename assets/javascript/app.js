@@ -59,6 +59,8 @@ function tplawesome(e,t){//e=data of item.html,
             //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
             //https://stackoverflow.com/questions/1206911/why-do-i-need-to-add-g-when-using-string-replace-in-javascript
             //https://www.w3schools.com/jsref/jsref_encodeURIComponent.asp
+
+            // Trying to Refine the YouTube Search
             q: "official|album -cover -mashup" + encodeURIComponent($("#song-input").val()).replace(/%20/g, "+") + encodeURIComponent($("#artist-name-input").val()).replace(/%20/g, "+"),
             
             maxResults: 6,
