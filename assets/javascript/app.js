@@ -39,6 +39,7 @@ function tplawesome(e,t){//e=data of item.html,
       $(".bs-example-modal-lg").modal("hide")
       $("#content").empty()
 
+
     });
     
     $("nav").on("click","#youtube-button", function(e) {
@@ -51,13 +52,16 @@ function tplawesome(e,t){//e=data of item.html,
        var request = gapi.client.youtube.search.list({
             part: "snippet",
             type: "video",
+            topicId: "/m/04rlf",
+
             //some info about encode URIComponent
             //i dont think we really need this method
             //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent
             //https://stackoverflow.com/questions/1206911/why-do-i-need-to-add-g-when-using-string-replace-in-javascript
             //https://www.w3schools.com/jsref/jsref_encodeURIComponent.asp
-            q: encodeURIComponent($("#song-input").val()).replace(/%20/g, "+"),
-            maxResults: 3,
+            q: "official|album -cover -mashup" + encodeURIComponent($("#song-input").val()).replace(/%20/g, "+") + encodeURIComponent($("#artist-name-input").val()).replace(/%20/g, "+"),
+            
+            maxResults: 6,
             order: "viewCount",
             publishedAfter: "2015-01-01T00:00:00Z"
        }); 
@@ -126,16 +130,17 @@ $("body").on("click","#artist-search-btn", function() {
             //main parameters
             action: 'query',
             format: 'json',
+            incategory:"band",
 
             generator: 'search',
                 //parameters for generator
-                gsrsearch: toSearch,
+                gsrsearch: toSearch + " band",
                 gsrnamespace: 0,
                 gsrlimit: 1,
 
             prop: 'extracts|pageimages',
                 //parameters for extracts
-                exchars: 3000,
+                exwordcount: 10000,
                 exlimit: 'max',
                 explaintext: true,
                 exintro: true,
@@ -187,6 +192,7 @@ $("body").on("click","#artist-search-btn", function() {
     // button.click(function () {
         articles.empty();
         toSearch = input.val();
+        $("#artist-name-input").val("")
         ajaxArticleData();
     // });
 // })
