@@ -1,3 +1,5 @@
+var data =""
+var youtubeID=""
 $(document).ready(function() {
 
 	   //  $("body").on("click","#artist-search-btn", function() {
@@ -16,15 +18,16 @@ $(document).ready(function() {
 
 	var input = $("#artist-name-input")
 	var artistSearch = ""
-	
+		
+
   var AjaxMusicgraphData = function() {
 	var queryURL = "http://api.musicgraph.com/api/v2/artist/search?api_key=f344ee98dde459951ae8cbb4f62add7d&name=" + artistSearch
-
 	$.ajax({
       url: queryURL,
       method: "GET"
     }).done(function(response) {
       console.log(response);
+      //youtube()
       // console.log(response.data[0].musicbrainz_image_url);
       // var artistImageURL = response.data[0].musicbrainz_image_url
       // var artistImage = $("<img>")
@@ -47,15 +50,19 @@ $(document).ready(function() {
       
     
  //    });
+
+ youtubeID=response.data[0].youtube_id;
+ console.log(youtubeID)
      });
     }
-
 	artistSearch = input.val()
 	$("#artist-name-input").val("")
 	console.log(artistSearch)
 	AjaxMusicgraphData()
 
+
   })
 
 
 })
+
