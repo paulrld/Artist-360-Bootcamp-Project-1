@@ -61,7 +61,7 @@ function tplawesome(e,t){//e=data of item.html,
             //https://www.w3schools.com/jsref/jsref_encodeURIComponent.asp
 
             // Trying to Refine the YouTube Search
-            q: "music|vevo -cover -mashup" + encodeURIComponent($("#song-input").val()).replace(/%20/g, "+"),
+            q: "music -cover -mashup" + encodeURIComponent($("#song-input").val()).replace(/%20/g, "+"),
             
             maxResults: 6,
             order: "viewCount",
@@ -103,7 +103,7 @@ function init() {
   console.log("initting")
     gapi.client.setApiKey("AIzaSyAWtNryZAH0FZ2IGlCr1Z8DPdvQwfjztPw");
     gapi.client.load("youtube", "v3", function() {
-      q: "album|song -cover -mashup" + encodeURIComponent($("#artist-name-input").val()).replace(/%20/g, "+")
+      // q: "album|song -cover -mashup" + encodeURIComponent($("#artist-name-input").val()).replace(/%20/g, "+")
         // yt api is ready
     });
 }
@@ -195,7 +195,8 @@ $("body").on("click","#artist-search-btn", function() {
     // button.click(function () {
         articles.empty();
         toSearch = input.val();
-        $("#artist-name-input").val("")
+        
+        console.log("123")
         ajaxArticleData();
     // });
 // })

@@ -16,8 +16,9 @@ $(document).ready(function() {
 
 	var input = $("#artist-name-input")
 	var artistSearch = ""
-	var queryURL = "http://api.musicgraph.com/api/v2/artist/search?api_key=f344ee98dde459951ae8cbb4f62add7d&name=" + artistSearch
+	
   var AjaxMusicgraphData = function() {
+	var queryURL = "http://api.musicgraph.com/api/v2/artist/search?api_key=f344ee98dde459951ae8cbb4f62add7d&name=" + artistSearch
 
 	$.ajax({
       url: queryURL,
@@ -50,6 +51,8 @@ $(document).ready(function() {
     }
 
 	artistSearch = input.val()
+	$("#artist-name-input").val("")
+	console.log(artistSearch)
 	AjaxMusicgraphData()
 
   })
