@@ -1,6 +1,6 @@
 body { 
 	padding-top: 70px;
-	background-image: url("../images/Blue Audience.jpg");
+	background-image: url("../images/concert.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 
@@ -31,6 +31,7 @@ body {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
+	background-color: black;
 }
 
 /*#search {
@@ -68,8 +69,19 @@ button {
 	height: auto;
 }
 
+#jumbotron-content {
+	background-color: black;
+	color: white;
+}
+
 #content {
 	overflow: auto;
+
+}
+
+h1 {
+	font-family: 'Lobster' !important;
+	font-size: 800% !important;
 }
 
 h2 {
@@ -85,6 +97,10 @@ p {
 	margin-top: 10px;
 	line-height: 30px;
 
+}
+
+label {
+	color: black;
 }
 
 img {

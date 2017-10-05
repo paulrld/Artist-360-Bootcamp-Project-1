@@ -7,7 +7,7 @@
 	<!-- Reset -->
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <!-- Wiki CSS -->
@@ -71,7 +71,7 @@
                   <label for="release-year-input">Year Released</label>
                   <input class="form-control" id="release-year-input" type="number">
                 </div>
-                 <button class="btn btn-primary" id="artist-search-btn" type="submit">Submit</button>
+                 <button class="btn btn-primary" id="artist-search-btn" type="submit" >Submit</button>
               </form>
             </div>
           </div>
@@ -81,9 +81,11 @@
     <!-- Main Content -->
     <div class="row">
       <div class="col-lg-9 col-md-9">
-        <div class="jumbotron">
+        <div id="jumbotron-content" class="jumbotron">
           
         <div id="content">
+
+        <h1>Search for an Artist!</h1>
         <!-- Placeholder -->
      <!--    <h1 class="text-center">Body Placeholder</h1> -->
         </div>
@@ -94,20 +96,20 @@
       <!-- Artist Search-->
         
         <!-- Spotify Tracks -->
-        <div id="jumbotron-spotify" class="jumbotron" style="background-color: white; padding: 60px;">
+        <div id="jumbotron-spotify" class="jumbotron">
 
           <div id="spotify-tracks">
             <!-- Placeholder -->
-            <h2 class="text-center">Spotify</h2>
+            
           </div>
           
         </div>
         <!-- Twitter Feed -->
-        <div id="jumbotron-twitter" class="jumbotron" style="background-color: peachpuff; padding: 60px;">
+        <div id="jumbotron-twitter" class="jumbotron">
 
           <div id="twitter-feed">
             <!-- Placeholder -->
-            <h2 class="text-center">Twitter</h2>
+            
           </div>
           
         </div>
@@ -177,6 +179,8 @@
 
   <!-- Musicgraph Javascript  -->
   <script type="text/javascript" src="assets/javascript/musicgraphAPI.js"></script>
+  <!-- Youtube Javascript  -->
+  <script type="text/javascript" src="assets/javascript/youtube.js"></script>
 </body>   
 </html>
                                   
