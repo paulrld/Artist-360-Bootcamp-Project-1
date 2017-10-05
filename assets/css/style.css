@@ -8,6 +8,7 @@ body {
 	  url("../images/concert.jpg");
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: black;
 
 }
 
@@ -59,22 +60,51 @@ body {
 }
 
 button {
+	margin: -1px;
+
 	/*display: inline-block;
 	padding: 13px !important;*/
 
 }
 
+#youtube-button {
+	font-size: 25px !important;
+	padding: 10px;
+	border-right: 1px solid black !important;
+	
+}
+
+#bio-button {
+	font-size: 25px !important;
+	padding: 10px;
+	border-right: 1px solid black !important;
+	
+}
+
+#random-button {
+	font-size: 25px !important;
+	padding: 10px;
+	
+}
+
 #footer-buttons {
-	padding: 20px;
+	/*padding: 20px;*/
 }
 
 #search-button {
+	font-size: 16px;
 	float: right;
 
 	/*color: black;*/
 	/*background-color: transparent;
 	border: transparent;*/
 	
+}
+
+#footer {
+	background-color: black;
+	padding: 2px;
+	border-top: 1px solid black;
 }
 
 #footer-spacing {
