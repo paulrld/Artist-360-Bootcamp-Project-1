@@ -1,8 +1,14 @@
 body { 
 	padding-top: 70px;
-	background-image: url("../images/concert.jpg");
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.5)
+    ),
+	  url("../images/concert.jpg");
 	background-size: cover;
 	background-attachment: fixed;
+	background-color: black;
 
 }
 
@@ -13,24 +19,27 @@ body {
 	background-image: url("../images/Orange Audience.jpeg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center center;
+	background-position: center -70px;
 	background-attachment: fixed;
 	color: steelblue;
-	text-shadow: 0 1px 0 white;
+	text-shadow: 0 1px 0 black;
 }
 
 #jumbotron-twitter {
 	background-image: url("../images/TwitterLogoSmall.png");
-	background-size: cover;
+	background-size: 100px auto;
 	background-repeat: no-repeat;
 	background-position: center center;
+	padding: 70px;
+	background-color: black;
 }
 
 #jumbotron-spotify {
 	background-image: url("../images/SpodifyLogo.png");
-	background-size: cover;
+  background-size: 100px auto;
 	background-repeat: no-repeat;
 	background-position: center center;
+	padding: 70px;
 	background-color: black;
 }
 
@@ -44,13 +53,46 @@ body {
 	padding-bottom: 400px;
 }
 
+#recent-search {
+	background-color: black;
+	margin-top: -20px;
+	color: white;
+}
+
 button {
+	margin: -1px;
+
 	/*display: inline-block;
 	padding: 13px !important;*/
 
 }
 
+#youtube-button {
+	font-size: 25px !important;
+	padding: 10px;
+	border-right: 1px solid black !important;
+	
+}
+
+#bio-button {
+	font-size: 25px !important;
+	padding: 10px;
+	border-right: 1px solid black !important;
+	
+}
+
+#random-button {
+	font-size: 25px !important;
+	padding: 10px;
+	
+}
+
+#footer-buttons {
+	/*padding: 20px;*/
+}
+
 #search-button {
+	font-size: 16px;
 	float: right;
 
 	/*color: black;*/
@@ -59,8 +101,14 @@ button {
 	
 }
 
+#footer {
+	background-color: black;
+	padding: 2px;
+	border-top: 1px solid black;
+}
+
 #footer-spacing {
-	padding: 12px;
+	padding: 35px;
 	background-color: transparent;
 }
 
@@ -93,17 +141,33 @@ p {
 	width: 90%;
 	padding: 20px;
 	font-size: 20px;
-	color: #777777;
+	color: white;
 	margin-top: 10px;
 	line-height: 30px;
 
 }
 
 label {
-	color: black;
+	color: white;
 }
 
-img {
+.modal-content {
+	background-color: black;
+	height: 545px;
+
+}
+
+
+
+#modal-image {
+	padding: 150px;
+	margin-bottom: 30px;
+	background-image: url("../images/modal image.jpg?i10c=img.resize(height:160)");
+
+}
+
+
+.wiki-image {
 	width: 50%;
 	height: auto;
 	float: left;
@@ -111,6 +175,13 @@ img {
 	position: relative;
 	top: 10px;
 }
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+
 
 /*.search-input[type=text] {
     width: 15%;

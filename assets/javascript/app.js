@@ -79,7 +79,7 @@ console.log(wikiSearch)
                     pageElement.append($('<h2>').append($('<a>').attr('href', 'http://en.wikipedia.org/wiki/' + page.title).text(page.title)));
 
                     //get the article image (if exists)
-                    if (page.thumbnail) pageElement.append($('<img>').attr('width', 300).attr('src', page.thumbnail.source));
+                    if (page.thumbnail) pageElement.append($('<img>').attr('width', 300).attr('src', page.thumbnail.source).addClass("wiki-image"));
 
                     //get the article text
                     pageElement.append($('<p>').text(page.extract));
