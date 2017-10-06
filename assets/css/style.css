@@ -92,8 +92,9 @@ button {
 }
 
 #search-button {
-	font-size: 16px;
+	font-size: 19px;
 	float: right;
+	border: .5px solid black;
 	
 }
 
@@ -148,9 +149,14 @@ label {
 	font-size: 16px;
 }
 
+/*#modal-boarder {
+	border-bottom: 4px solid white !important;
+}*/
+
 .modal-content {
 	background-color: black;
 	height: 545px;
+	border: 1px solid lightgrey;
 
 }
 
