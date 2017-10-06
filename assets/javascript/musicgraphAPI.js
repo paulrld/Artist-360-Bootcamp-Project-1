@@ -21,7 +21,7 @@ $(document).ready(function() {
 		
 
   var AjaxMusicgraphData = function() {
-	var queryURL = "http://api.musicgraph.com/api/v2/artist/search?api_key=f344ee98dde459951ae8cbb4f62add7d&name=" + artistSearch
+	var queryURL = "https://api.musicgraph.com/api/v2/artist/search?api_key=f344ee98dde459951ae8cbb4f62add7d&name=" + artistSearch
 	$.ajax({
       url: queryURL,
       method: "GET"

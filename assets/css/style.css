@@ -92,12 +92,9 @@ button {
 }
 
 #search-button {
-	font-size: 16px;
+	font-size: 19px;
 	float: right;
-
-	/*color: black;*/
-	/*background-color: transparent;
-	border: transparent;*/
+	border: .5px solid black;
 	
 }
 
@@ -149,11 +146,17 @@ p {
 
 label {
 	color: white;
+	font-size: 16px;
 }
+
+/*#modal-boarder {
+	border-bottom: 4px solid white !important;
+}*/
 
 .modal-content {
 	background-color: black;
 	height: 545px;
+	border: 1px solid lightgrey;
 
 }
 
