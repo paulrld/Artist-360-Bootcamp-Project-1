@@ -1,6 +1,6 @@
 var data =""
 var youtubeID=""
-$(document).ready(function() {
+// $(document).ready(function() {
 
 	   //  $("body").on("click","#artist-search-btn", function() {
     //   event.preventDefault()
@@ -11,7 +11,9 @@ $(document).ready(function() {
 	// MUSICGRAPH API!!!
 	// api key f344ee98dde459951ae8cbb4f62add7d
 
-	$("body").on("click","#artist-search-btn", function() {
+	$("body").on("click","#artist-search-btn", musicgraph)
+
+		function musicgraph() {
 
 // $("nav").on("click","#bio-button", function() {
   event.preventDefault()
@@ -61,8 +63,8 @@ $(document).ready(function() {
 	AjaxMusicgraphData()
 
 
-  })
+  }
 
 
-})
+// })
 

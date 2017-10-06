@@ -11,6 +11,28 @@
   firebase.initializeApp(config)
 
   var database = firebase.database()
+
+  var randomArtistArray = ["Coldplay", "Muse", "Radiohead", "Queens of the Stone Age"]
+
+  $("#random-button").on("click", function() {
+     var randomNumber = Math.floor(Math.random() * randomArtistArray.length)
+     randomArtistArray[randomNumber]
+     $("#artist-name-input").empty()
+     console.log($("#artist-name-input").val())
+
+     var randomArtist = randomArtistArray[randomNumber]
+
+     $("#artist-name-input").val(randomArtist)
+     console.log($("#artist-name-input").val())
+    wiki()
+    musicgraph()
+
+
+
+
+     console.log(randomArtistArray[randomNumber])
+
+  })
     
     $("body").on("click","#artist-search-btn", function() {
       event.preventDefault()
@@ -166,7 +188,7 @@ console.log(wikiSearch)
 
           var thisButton = $(this).attr('id');
           console.log(thisButton)
-          if(thisButton == "artist-search-btn") {
+          if(thisButton == "artist-search-btn" || thisButton == "random-button") {
             console.log("123123")
             hasSearch = false;
           }
