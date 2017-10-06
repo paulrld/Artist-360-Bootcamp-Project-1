@@ -89,7 +89,7 @@ console.log(wikiSearch)
   var input = $("#artist-name-input");
   // var button = $("#bio-button");
   
-  var searchUrl = 'http://en.wikipedia.org/w/api.php';
+  var searchUrl = 'https://en.wikipedia.org/w/api.php';
 
   var ajaxArticleData = function () {
 
