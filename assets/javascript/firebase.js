@@ -2,7 +2,7 @@
   var config = {
     apiKey: "AIzaSyBXSp5la36OCI7Net3eh2U79Nc5UJfggCQ",
     authDomain: "artist-360-app.firebaseapp.com",
-    databaseURL: "https://artist-360-app.firebaseio.com",
+    databaseURL: "http://artist-360-app.firebaseio.com",
     projectId: "artist-360-app",
     storageBucket: "artist-360-app.appspot.com",
     messagingSenderId: "1088102038579"
